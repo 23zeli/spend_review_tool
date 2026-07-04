@@ -1,6 +1,6 @@
 export type Status = 'pending' | 'approved' | 'declined';
 export type SortKey = 'date' | 'amount';
-export type SortOrder = 'asc' | 'desc';
+export type SortDir = 'asc' | 'desc';
 
 export interface Transaction {
   id: string;
