@@ -1,9 +1,9 @@
-
+import SummaryBar from "./components/SummaryBar";
 
 function SpendExplorer(){
 
   <div>
-    <h1>Spend Review Tool</h1>
+    <SummaryBar count={10} totalCents={10000} />
   </div>
 
 
