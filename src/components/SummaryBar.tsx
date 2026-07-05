@@ -7,7 +7,7 @@ interface Props {
 
 export default function SummaryBar({ count, totalCents }: Props) {
     return(
-        <div>
+        <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8, marginBottom: 14,}}>
             <div>
                 <div>Visible Transaction</div>
                 <div>{count}</div>
