@@ -16,7 +16,7 @@ export default function SummaryBar({ count, totalCents }: Props) {
             </div>
             <div>
                 <div style={cardStyle}>Total Spend</div>
-                <div style={labelStyle}>{fmt.format(totalCents/100)}</div>
+                <div style={valueStyle}>{fmt.format(totalCents/100)}</div>
             </div>
         </div>
     )
@@ -32,4 +32,9 @@ const labelStyle: React.CSSProperties = {
     fontSize: 18,
     color: '#888',
     marginBottom: 4,
+}
+
+const valueStyle: React.CSSProperties = {
+    fontSize: 18,
+    fontWeight: 500,
 }
