@@ -5,7 +5,9 @@ const fmt = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' 
 
 function formatDate(iso: string) {
     const [y, m, d] = iso.split('-').map(Number);
-    return new Date(y, m - 1, d).toLocaleDateString('en-US', {month: 'short', day: 'numeric', year: 'numeric'});
+    return new Date(y, m - 1, d).toLocaleDateString('en-US', {
+        month: 'short', day: 'numeric', year: 'numeric'
+    });
 }
 
 interface Props {
