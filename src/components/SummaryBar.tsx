@@ -10,11 +10,11 @@ export default function SummaryBar({ count, totalCents }: Props) {
         <div>
             <div>
                 <div>Visible Transaction</div>
-                <div></div>
+                <div>{count}</div>
             </div>
             <div>
                 <div>Total Spend</div>
-                <div></div>
+                <div>{fmt.format(totalCents/100)}</div>
             </div>
         </div>
     )
